@@ -2,10 +2,10 @@
 
 /* global define, description, it, expect */
 
-define([], function() {
-	describe('test', function() {
-		it('should be pass', function() {
-			expect(true).toEqual(true);
+define(['angular'], function(angular) {
+	describe('Require AngularJS', function() {
+		it('angular object should be defined', function() {
+			expect(angular).toBeDefined();
 		});
 	});
 });
